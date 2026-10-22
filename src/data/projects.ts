@@ -1,0 +1,308 @@
+import type { Project } from "./types";
+
+export const PROJECTS: Project[] = [
+  {
+    slug: "his-hmis",
+    title: "HIS/HMIS",
+    summary:
+      "A healthcare information management system supporting connected hospital operations across registration, pharmacy, inventory, dietary services, purchasing, ambulance operations, and management reporting.",
+    problem:
+      "Hospital operations depend on interconnected workflows for patient registration, pharmacy, inventory, dietary services, purchasing, ambulance operations, and management reporting.",
+    myRole: "Full-Stack Developer at ACGIL",
+    contribution: [
+      "Contributed to UI and integration work across Purchase, Ambulance, Pharmacy, Inventory, Dietary, MIS Reports, and Registration.",
+      "Worked on Purchase workflows, including parts of the PR to RFQ to Quotation process.",
+      "Contributed to vendor quotation and purchase-related UI and integration workflows.",
+      "Worked on Ambulance UI and API integration.",
+      "Improved Pharmacy, Inventory, Dietary, Registration, and MIS reporting interfaces.",
+      "Worked with reusable React components within the existing application architecture.",
+      "Contributed to frontend performance improvements through lazy loading and code splitting.",
+    ],
+    category: "healthcare",
+    techIds: [
+      "react",
+      "javascript",
+      "redux-toolkit",
+      "rtk-query",
+      "php",
+      "postgresql",
+      "rest-apis",
+      "git",
+    ],
+    featured: true,
+    visibility: "public",
+    status: "verified",
+    cover: {
+      src: "/projects/hmis.png",
+      alt: "Illustrative HIS/HMIS dashboard concept with generic hospital operations panels and synthetic data.",
+      anonymized: true,
+      illustrative: true,
+    },
+    features: [
+      "Patient registration",
+      "Pharmacy",
+      "Inventory",
+      "Dietary services",
+      "Purchase and vendor quotation workflows",
+      "Ambulance operations",
+      "MIS reports",
+    ],
+    decisions: [
+      "Worked within the existing application architecture and reusable component patterns.",
+      "Used lazy loading and code splitting for frontend performance.",
+      "Integrated REST APIs for module workflows.",
+    ],
+    performanceWork: [
+      {
+        text: "Implemented lazy loading and code splitting in the application.",
+        verified: true,
+      },
+    ],
+  },
+  {
+    slug: "centralized-blog-cms",
+    title: "Centralized Blog CMS",
+    summary:
+      "A centralized content management platform for managing and publishing blog content across multiple websites through a shared administrative interface.",
+    problem:
+      "Blog content across multiple websites needed a shared administrative interface for creation, editing, organization, and publishing.",
+    myRole: "Full-Stack Developer covering frontend, backend, and deployment",
+    contribution: [
+      "Built the centralized content management dashboard.",
+      "Implemented blog creation and editing workflows.",
+      "Implemented content publishing workflows.",
+      "Integrated publishing with multiple website destinations.",
+      "Implemented content organization and reusable management workflows.",
+    ],
+    category: "content-platform",
+    techIds: ["nextjs", "rest-apis", "aws", "pm2"],
+    featured: true,
+    visibility: "public",
+    status: "verified",
+    cover: {
+      src: "/projects/cms.png",
+      alt: "Illustrative CMS dashboard concept with generic publishing panels and synthetic figures, not project results.",
+      anonymized: true,
+      illustrative: true,
+    },
+    features: [
+      "Centralized content management dashboard",
+      "Blog creation and editing",
+      "Content publishing workflows",
+      "Publishing to multiple website destinations",
+      "Content organization and reusable management workflows",
+    ],
+    decisions: [
+      "Built the application with Next.js.",
+      "Used a centralized publishing architecture.",
+      "Integrated API-based publishing.",
+      "Deployed to AWS EC2 with PM2 process management.",
+      "Applied memoization where appropriate.",
+    ],
+  },
+  {
+    slug: "acgil-corporate-website",
+    title: "ACGIL Corporate Website",
+    summary:
+      "A public corporate website presenting ACGIL's company information, enterprise products, industry solutions, and contact options.",
+    problem:
+      "The site provides a public place to discover ACGIL's company information, enterprise products, industry solutions, and contact options.",
+    myRole: "Built the corporate website with Next.js",
+    contribution: [
+      "Built the ACGIL corporate website using Next.js.",
+      "Focused on frontend optimization and established web development practices.",
+    ],
+    category: "other",
+    techIds: ["nextjs"],
+    featured: true,
+    visibility: "public",
+    status: "verified",
+    cover: {
+      src: "/projects/acgil.png",
+      alt: "ACGIL corporate website homepage featuring its manufacturing ERP product.",
+      anonymized: true,
+      fit: "contain",
+    },
+    features: [
+      "Company and corporate information",
+      "Enterprise product discovery",
+      "Industry and solution information",
+      "Contact and inquiry options",
+    ],
+    decisions: [
+      "Used Next.js for the website implementation.",
+      "Focused on frontend optimization and established web development practices.",
+    ],
+    links: { live: "https://acgil.com/" },
+  },
+  {
+    slug: "surynova-solar-website",
+    title: "Surynova Solar Website",
+    summary:
+      "A Next.js website introducing Surynova's rooftop solar services, system options, subsidy information, and customer enquiry paths.",
+    problem:
+      "Homeowners need a clear way to understand rooftop solar options and take the next step toward an installation or service enquiry.",
+    myRole: "Built the website with Next.js",
+    contribution: [
+      "Built the Surynova website using Next.js.",
+      "Applied memoization and frontend performance optimization techniques, with attention to LCP and Lighthouse guidance.",
+    ],
+    category: "other",
+    techIds: ["nextjs"],
+    featured: true,
+    visibility: "public",
+    status: "verified",
+    cover: {
+      src: "/projects/solar.png",
+      alt: "Illustrative rooftop solar panel installation with technicians working on a residential roof.",
+      anonymized: true,
+      illustrative: true,
+      illustrativeLabel: "Illustrative image",
+    },
+    features: [
+      "Rooftop solar installation and maintenance service information",
+      "On-grid, off-grid, and hybrid system comparisons",
+      "PM Surya Ghar subsidy information",
+      "Net metering education",
+      "Quote and service enquiry paths",
+    ],
+    decisions: [
+      "Used Next.js to build the public-facing solar services website.",
+      "Applied memoization and frontend performance optimization techniques.",
+      "Considered Largest Contentful Paint (LCP) and Lighthouse guidance during optimization.",
+    ],
+    performanceWork: [
+      {
+        text: "Applied memoization and frontend performance optimization techniques.",
+        verified: true,
+      },
+      {
+        text: "Considered Largest Contentful Paint (LCP) and Lighthouse audits during performance work.",
+        verified: true,
+      },
+    ],
+    links: { live: "https://suryanova-knighhtriders-projects.vercel.app/" },
+  },
+  {
+    slug: "alaknanda-metro-advertising-platform",
+    title: "Alaknanda Metro Advertising Platform",
+    summary:
+      "A Next.js platform for exploring Delhi Metro advertising opportunities, paired with a dashboard for tracking the lead pipeline.",
+    problem:
+      "The platform brings metro advertising information and lead pipeline tracking into one workflow.",
+    myRole: "Built the metro advertising platform and lead pipeline dashboard",
+    contribution: [
+      "Built the public-facing metro advertising platform and campaign enquiry paths.",
+      "Built a dashboard for tracking advertising leads through the pipeline.",
+    ],
+    category: "other",
+    techIds: ["nextjs"],
+    featured: true,
+    visibility: "public",
+    status: "verified",
+    cover: {
+      src: "/projects/metro.png",
+      alt: "Alaknanda Metro advertising platform homepage with a metro train hero image, station search, and campaign enquiry buttons.",
+      anonymized: true,
+      fit: "contain",
+    },
+    features: [
+      "Delhi Metro advertising information",
+      "Station exploration entry points",
+      "Campaign enquiry paths",
+      "Lead pipeline dashboard",
+    ],
+    decisions: [
+      "Built the public advertising platform with Next.js.",
+      "Included a dashboard to support lead pipeline tracking.",
+    ],
+    links: { live: "https://alaknanda-metro.vercel.app/" },
+  },
+  {
+    slug: "real-estate-lead-generation-landing-page",
+    title: "Real Estate Lead Generation Landing Page",
+    summary:
+      "A property campaign landing page presenting key details and enquiry actions, with multiple lead forms for prospective buyers.",
+    problem:
+      "Real estate campaigns need to present property information clearly and make it easy for prospective buyers to request follow-up.",
+    myRole: "Built the real estate advertising landing page and lead forms",
+    contribution: [
+      "Built the property-focused campaign page using HTML, CSS, and JavaScript, with PHP for lead form handling.",
+      "Added multiple enquiry forms and callback, phone, and WhatsApp contact paths.",
+    ],
+    category: "other",
+    techIds: ["html", "css", "javascript", "php"],
+    featured: true,
+    visibility: "public",
+    status: "verified",
+    cover: {
+      src: "/projects/lp.png",
+      alt: "Real estate campaign landing page showing property details, navigation, and multiple lead enquiry forms.",
+      anonymized: true,
+      fit: "contain",
+    },
+    features: [
+      "Property highlights and campaign information",
+      "Pricing, site plan, amenities, gallery, and location navigation",
+      "Multiple lead enquiry forms",
+      "Callback, phone, and WhatsApp contact actions",
+      "Brochure and virtual tour entry points",
+    ],
+    decisions: [
+      "Used HTML, CSS, and JavaScript for the landing page experience, with PHP for lead handling.",
+      "Placed enquiry paths alongside the property information and campaign calls to action.",
+    ],
+    links: { live: "https://lp-theme.vercel.app/" },
+  },
+  {
+    slug: "react-streaming-ui-clone",
+    title: "React Streaming UI Clone",
+    summary:
+      "An independent React recreation of a streaming browse interface, with featured-title artwork, navigation, and prominent viewing actions.",
+    problem:
+      "This project recreates a familiar streaming discovery layout as a focused React interface exercise.",
+    myRole: "Built the streaming interface with React",
+    contribution: [
+      "Built a React-based streaming service interface inspired by Netflix; it is an independent clone and is not affiliated with Netflix.",
+      "Created browse navigation and a featured-title hero with Play and More Info actions.",
+    ],
+    category: "other",
+    techIds: ["react"],
+    featured: true,
+    visibility: "public",
+    status: "verified",
+    cover: {
+      src: "/projects/netflix.png",
+      alt: "Fan-made React streaming interface inspired by Netflix, with browsing navigation and a featured Stranger Things hero.",
+      anonymized: true,
+      illustrative: true,
+      illustrativeLabel: "Independent UI Clone",
+    },
+    features: [
+      "Streaming-style browse navigation",
+      "Featured-title hero presentation",
+      "Play and More Info actions",
+      "Search and account-control icons",
+    ],
+    decisions: [
+      "Focused the interface around featured content and a clear primary action.",
+      "Recreated a recognizable streaming browse pattern as an independent React project.",
+    ],
+    links: { live: "https://gilded-rugelach-66b018.netlify.app/" },
+  },
+  {
+    slug: "surego",
+    title: "SureGo",
+    summary: "[TODO: confirm what SureGo is and whether it can be published.]",
+    problem: "[TODO: confirm the problem SureGo solves.]",
+    myRole: "[TODO: confirm role and contribution.]",
+    contribution: [],
+    category: "other",
+    techIds: [],
+    featured: false,
+    visibility: "hidden",
+    status: "placeholder",
+    features: [],
+    decisions: [],
+  },
+];

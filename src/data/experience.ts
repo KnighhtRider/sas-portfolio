@@ -1,0 +1,68 @@
+import type { Experience } from "./types";
+
+export const EXPERIENCES: Experience[] = [
+  {
+    id: "acgil",
+    employer: "ACGIL",
+    title: "Full-Stack Developer",
+    start: "2026-05",
+    summary:
+      "Working on enterprise web applications, including healthcare information systems and corporate websites. Contributions include frontend development, UI/UX improvements, reusable components, module enhancements, and API integration work.",
+    responsibilities: [
+      "Developed and improved user interfaces for enterprise applications using React and Next.js.",
+      "Worked on multiple HIS/HMIS modules, including Purchase, Ambulance, Pharmacy, Inventory, Dietary, MIS Reports, and Registration.",
+      "Improved UI consistency, usability, and reusable component architecture.",
+      "Worked on purchase workflows and associated backend/API integration.",
+      "Built the ACGIL corporate website with Next.js, focusing on frontend optimization and established web development practices.",
+      "Worked on frontend performance techniques, including lazy loading and code splitting.",
+      "Worked with APIs and backend functionality as required by project modules.",
+      "Contributed to UI/UX improvements across business applications.",
+    ],
+    projectSlugs: ["his-hmis", "acgil-corporate-website"],
+    techIds: [
+      "react",
+      "nextjs",
+      "javascript",
+      "typescript",
+      "tailwind-css",
+      "redux-toolkit",
+      "rtk-query",
+      "rest-apis",
+      "postgresql",
+      "php",
+      "git",
+    ],
+    status: "verified",
+  },
+  {
+    id: "digital-rubix",
+    employer: "Digital Rubix",
+    title: "Full-Stack Developer",
+    start: "2024-05",
+    end: "2026-04",
+    summary:
+      "Developed responsive React-based web experiences and landing page themes for real-estate lead-generation campaigns. Worked on reusable frontend implementations, CRM integrations, and deployment workflows across hosting platforms.",
+    responsibilities: [
+      "Built 30+ responsive React landing page themes.",
+      "Developed reusable UI structures for lead-generation websites.",
+      "Integrated landing pages with CRM platforms and lead-capture workflows.",
+      "Worked with client-specific page customization and responsive layouts.",
+      "Supported deployment workflows using Google Cloud Platform, Hostinger, and Vercel.",
+      "Contributed to frontend delivery for a high-volume landing-page operation.",
+    ],
+    projectSlugs: ["real-estate-lead-generation-landing-page"],
+    techIds: [
+      "react",
+      "javascript",
+      "html",
+      "css",
+      "rest-apis",
+      "crm-integrations",
+      "google-cloud-platform",
+      "hostinger",
+      "vercel",
+      "git",
+    ],
+    status: "verified",
+  },
+];
