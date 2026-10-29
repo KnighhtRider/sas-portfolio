@@ -136,7 +136,7 @@ export const PROJECTS: Project[] = [
     cover: {
       src: "/projects/crm.png",
       alt: "Illustrative PropFlow CRM lead-detail workspace with tasks, site visits, attribution, and assignment panels.",
-      anonymized: false,
+      anonymized: true,
       illustrative: true,
     },
     features: [
