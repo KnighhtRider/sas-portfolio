@@ -101,6 +101,66 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
+    slug: "propflow-crm",
+    title: "PropFlow CRM",
+    summary:
+      "A real-estate CRM monorepo with a unified lead-detail workspace, open-task and site-visit panels, source-attribution journey, and assignment control — closing documented 360 gaps for a sales team.",
+    problem:
+      "A sales team needed a single lead record combining contact details, follow-up tasks, property-visit scheduling, original-source tracking, and owner assignment without leaving the page or duplicating requests.",
+    myRole: "Full-Stack Developer — Lead 360 workspace, attribution endpoint, task/visit panels, and quality rules",
+    contribution: [
+      "Built the Lead 360 detail page with Overview / Tasks / Site visits / Matches / Activity tabs and a summary strip.",
+      "Added inline task completion and a bound create-task sheet so the lead never changes.",
+      "Built the site-visits panel (upcoming/past grouped) with a locked-context schedule-visit sheet.",
+      "Implemented separate GET /leads/:id/attribution endpoint and UI with newest-first journey, identifier fallbacks, and degraded retry.",
+      "Replaced the sidebar duplicate assignment menu with a single hero owner-badge trigger (LeadAssignmentMenu with children support).",
+      "Used shared TanStack Query keys so panel + summary-strip deduplicate tasks, visits, and attribution to one request each.",
+      "Enforced security rules: auth on all endpoints except health/auth-login; input validated with shared Zod; no raw Mongo queries; server-only activities.",
+    ],
+    category: "other",
+    techIds: [
+      "nextjs",
+      "react",
+      "typescript",
+      "tailwind-css",
+      "express",
+      "mongodb",
+      "rest-apis",
+      "git",
+      "nodejs",
+      "javascript",
+    ],
+    featured: true,
+    visibility: "public",
+    status: "verified",
+    cover: {
+      src: "/projects/crm.png",
+      alt: "Illustrative PropFlow CRM lead-detail workspace with tasks, site visits, attribution, and assignment panels.",
+      anonymized: false,
+      illustrative: true,
+    },
+    features: [
+      "Lead 360 detail with tabbed navigation",
+      "Open tasks panel with inline complete",
+      "Site visits panel with upcoming / past groups",
+      "Source & attribution journey with expandable later touches",
+      "At-a-glance summary strip (tasks, visits, matches, owner)",
+      "Quick actions: New task, Schedule visit, Assign / Reassign",
+    ],
+    decisions: [
+      "Separated attribution into its own endpoint (GET /leads/:id/attribution) rather than expanding Lead payload.",
+      "Used shared query keys (openTasksQuery / leadVisitsQuery / leadKeys.attribution) for deduplication across panel and strip.",
+      "Kept the hero owner badge as the single reassign trigger instead of a sidebar duplicate.",
+      "Left `// @ts-nocheck` debt in dashboard-overview untouched per locked decision.",
+    ],
+    performanceWork: [
+      {
+        text: "Shared TanStack Query keys deduplicate tasks, visits, and attribution requests so panels and the summary strip never duplicate network calls.",
+        verified: true,
+      },
+    ],
+  },
+  {
     slug: "acgil-corporate-website",
     title: "ACGIL Corporate Website",
     summary:
